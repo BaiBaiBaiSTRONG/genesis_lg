@@ -128,6 +128,6 @@ class GO2CfgPPO( LeggedRobotCfgPPO ):
         run_name = ''
         experiment_name = 'go2'
         save_interval = 100
-        load_run = "Dec22_13-55-49_"
+        load_run = "Dec28_17-20-17_"
         checkpoint = -1
         max_iterations = 600

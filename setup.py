@@ -2,14 +2,17 @@ from setuptools import find_packages
 from distutils.core import setup
 
 setup(
-    name='genesis_lr',
+    name='genesis_lg',
     version='0.1.0',
-    author='Yasen Jia',
+    author='Baix3XiaoRuo',
     license="BSD-3-Clause",
     packages=find_packages(),
-    author_email='jason_1120202397@163.com',
-    description='Genesis environments for Legged Robots',
-    install_requires=['genesis-world',
+    author_email='hanyang_chou@icloud.com',
+    description='Forked from Genesis environments for Legged Robots',
+    install_requires=['gym',
                       'rsl-rl',
-                      'matplotlib']
+                      'matplotlib',
+                      'open3d',
+                      
+                      ]
 )
