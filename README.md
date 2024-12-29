@@ -1,5 +1,7 @@
 # 🦿 Legged Robotics in Genesis
 
+Forked from [genesis_lr](https://github.com/lupinjia/genesis_lr), Great Thanks to [lupinjia](https://github.com/lupinjia) and [Genesis-Embodied-AI](https://github.com/Genesis-Embodied-AI).
+
 A [legged_gym](https://github.com/leggedrobotics/legged_gym) based framework for training legged robots in [genesis](https://github.com/Genesis-Embodied-AI/Genesis/tree/main)
 
 ## Table of Contents
@@ -18,6 +20,7 @@ A [legged_gym](https://github.com/leggedrobotics/legged_gym) based framework for
   - [TODO](#todo)
 
 ---
+
 ## 📅 Updates
 
 <details open>
@@ -30,7 +33,7 @@ A [legged_gym](https://github.com/leggedrobotics/legged_gym) based framework for
 <details>
 <summary>2024/12/26</summary>
 
-- add terrain support, optional terrain type: ["plane", "heightfield"]. 
+- add terrain support, optional terrain type: ["plane", "heightfield"].
 
   ![](./test_resources/terrain_demo.gif)
 
@@ -54,15 +57,14 @@ A [legged_gym](https://github.com/leggedrobotics/legged_gym) based framework for
 
 ---
 
-
 ## 🌟 Features
 
 - **Totally based on [legged_gym](https://github.com/leggedrobotics/legged_gym)**
-  
+
   It's easy to use for those who are familiar with legged_gym and rsl_rl
 
 - **Faster and Smaller**
-  
+
   For a go2 walking on the plane task with 4096 envs, the training speed in Genesis is approximately **1.3x** compared to [Isaac Gym](https://developer.nvidia.com/isaac-gym), while the graphics memory usage is roughly **1/2** compared to IsaacGym.
 
   With this smaller memory usage, it's possible to **run more parallel environments**, which can further improve the training speed.
@@ -77,6 +79,7 @@ For tests conducted on Genesis, please refer to [tests.md](./test_resources/test
 2. Install [PyTorch](https://pytorch.org/)
 3. Install Genesis following the instructions in the [Genesis repo](https://github.com/Genesis-Embodied-AI/Genesis)
 4. Install rsl_rl and tensorboard
+
    ```bash
    # Install rsl_rl.
    git clone https://github.com/leggedrobotics/rsl_rl
@@ -85,10 +88,11 @@ For tests conducted on Genesis, please refer to [tests.md](./test_resources/test
    # Install tensorboard.
    pip install tensorboard
    ```
+
 5. Install genesis_lr
    ```bash
-   git clone https://github.com/lupinjia/genesis_lr
-   cd genesis_lr
+   git clone https://github.com/BaiBaiBaiSTRONG/genesis_lg
+   cd genesis_lg
    pip install -e .
    ```
 
@@ -103,7 +107,7 @@ cd legged_gym/scripts
 python train.py --headless # run training without rendering
 ```
 
-After the training is done, paste the `run_name` under `logs/go2` to `load_run` in `go2_config.py`: 
+After the training is done, paste the `run_name` under `logs/go2` to `load_run` in `go2_config.py`:
 
 ![](./test_resources/paste_load_run.png)
 
@@ -113,12 +117,12 @@ Then, run `play.py` to visualize the trained model:
 
 ### 📖 Instructions
 
-For more detailed instructions, please refer to the [wiki page](https://github.com/lupinjia/genesis_lr/wiki)
+For more detailed instructions, please refer to the [wiki page](https://github.com/BaiBaiBaiSTRONG/genesis_lg/wiki)
 
 ## 🖼️ Gallery
 
-| Go2 | Bipedal Walker |
-|--- | --- |
+| Go2                                     | Bipedal Walker                                |
+| --------------------------------------- | --------------------------------------------- |
 | ![](./test_resources/go2_flat_play.gif) | ![](./test_resources/bipedal_walker_flat.gif) |
 
 ## 🙏 Acknowledgements
@@ -128,6 +132,7 @@ For more detailed instructions, please refer to the [wiki page](https://github.c
 - [legged_gym](https://github.com/leggedrobotics/legged_gym)
 - [rsl_rl](https://github.com/leggedrobotics/rsl_rl)
 - [unitree_rl_gym](https://github.com/unitreerobotics/unitree_rl_gym)
+- [genesis_lr](https://github.com/lupinjia/genesis_lr)
 
 ## TODO
 
