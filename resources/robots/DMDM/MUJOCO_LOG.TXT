@@ -1,6 +1,0 @@
-Tue Nov  5 02:20:24 2024
-WARNING: mju_openResource: unknown file 'src/robot/go2-rod/scene.xml'
-
-Tue Nov  5 02:22:42 2024
-WARNING: mju_openResource: unknown file 'src/robot/go2-rod/scene.xml'
-
